@@ -1,5 +1,5 @@
 import React from 'react'
-import CourseCard from "../components/CourseCard"
+import CourseCard from "../Components/CourseCard"
 
 function Courses() {
   const courses = [
