@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
+import { FaEye, FaEdit, FaTrash } from "react-icons/fa"
 function StudentCard({student,onDelete,onEdit}) {
   
   return (
@@ -15,11 +15,11 @@ function StudentCard({student,onDelete,onEdit}) {
 <p className='text-gray-500'>Phone: {student.phone}</p>
 <div className='flex gap-2 mt-5'>
   <Link to={`/students/${student.id}`} className='bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700'>
-  View</Link>
+   <FaEye />View</Link>
 <button onClick={()=>onEdit(student)} className='bg-pink-500 text-white px-4 py-2 rounded-lg'>
-  Edit</button>
+   <FaEdit />Edit</button>
   <button onClick={()=>onDelete(student.id)} className='bg-black text-white px-4 py-2 rounded-lg'>
-    Delete
+    <FaTrash /> Delete
   </button>
 </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import CourseCard from "../Components/CourseCard"
+import { FaGraduationCap } from "react-icons/fa"
 
 function Courses() {
   const courses = [
@@ -45,7 +46,7 @@ function Courses() {
   <div className='text-pink-500 font-semibold'>
      WHAT WE TEACH
   </div>
-  <h1 className='text-4xl font-bold text-purple-700'>OUR COURSES</h1>
+  <h1 className='text-4xl font-bold text-purple-700'>  <FaGraduationCap />OUR COURSES</h1>
   <p className='text-gray-500 mt-2 mb-8'>Choose a skill and start learning.</p>
   <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
     {courses.map((course)=>(
